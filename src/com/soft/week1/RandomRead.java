@@ -6,7 +6,7 @@ import java.io.RandomAccessFile;
 /**
  * 使用随机读写流RandomAccessFile类，实现对长文本文件的随机读写
  * @Author yhChen
- * @Date 2020/01/2020/1/17
+ * @Date 2020/1/17
  */
 public class RandomRead {
     public static void main(String[] args) {
