@@ -11,7 +11,7 @@ import java.util.List;
  * 得到一个file数组，将其按文件大小排序输出
  *
  * @Author yhChen
- * @Date 2020/01/2020/1/17
+ * @Date 2020/1/17
  */
 public class FileRecursive {
     public static void main(String[] args) {
@@ -63,8 +63,7 @@ public class FileRecursive {
      *
      * @param srcFile
      */
-    private static void getAllJavaFilePaths(File srcFile) {
-        //获取该目录下所有的文件或者文件夹的File数组
+    private static void getAllJavaFilePaths(File srcFile) {        //获取该目录下所有的文件或者文件夹的File数组
         File[] fileArray = srcFile.listFiles();
         //遍历该File数组，得到每一个File对象
         for (File file : fileArray) {
