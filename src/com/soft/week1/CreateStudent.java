@@ -12,13 +12,13 @@ public class CreateStudent implements Cloneable, Serializable {
     private String code;
 
     @Override
-    protected Object clone() throws CloneNotSupportedException{
-        return (CreateStudent)super.clone();
+    protected Object clone() throws CloneNotSupportedException {
+        return (CreateStudent) super.clone();
     }
 
     @Override
-    public boolean equals(Object o){
-        if (this == o){
+    public boolean equals(Object o) {
+        if (this == o) {
             return true;
         }
         if (o == null || getClass() != o.getClass()) {
@@ -33,9 +33,9 @@ public class CreateStudent implements Cloneable, Serializable {
     }
 
     @Override
-    public int hashCode(){
-        int result = code !=null ?code.hashCode() : 0;
-        result = 31 * result +(name != null ? name.hashCode() : 0);
+    public int hashCode() {
+        int result = code != null ? code.hashCode() : 0;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
 
@@ -63,7 +63,7 @@ public class CreateStudent implements Cloneable, Serializable {
                 '}';
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         //1、使用呢哇关键值创建对象
         CreateStudent cs1 = new CreateStudent();
         cs1.setCode("111");
